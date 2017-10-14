@@ -1,0 +1,156 @@
+html,body{
+    width:100%;
+    height:100%;
+  }
+  input{
+    -webkit-appearance: none;
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+  }
+  header{
+      position: fixed;
+      top:0;
+      left: 0;
+      width:100%;
+      height: 45px;
+      background-image: url(../images/header-bg.png);
+      background-size:1px 44px;
+      background-repeat: repeat-x;
+      border-bottom: 1px solid #ccc;
+  }
+  header .back-icon{
+      position: absolute;
+      top:0;
+      left: 0;
+      width:40px;
+      height: 44px;
+      padding:10px 11px;
+      background-image: url(../images/jd-sprites.png);
+      background-size: 200px 200px;
+      background-position: -22px 2px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      background-origin: content-box;
+  }
+  header .search-box{
+      width:100%;
+      height: 44px;
+      padding: 0 50px;
+      box-sizing: border-box;
+  }
+  header .search-box input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    border-radius: 5px;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+  header .menu-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 44px;
+    padding: 10px 11px;
+    background-image: url(../images/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -60px 2px;
+    background-origin: content-box;
+    background-clip: content-box;
+    box-sizing: border-box
+  }
+  main{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+    box-sizing: border-box;
+    display: flex; 
+  }
+  main aside{
+    width: 90px;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  main aside ul{
+      width:100%;
+      background-color: #fff;
+  }
+  main aside li.active{
+    border-right: none;
+    background-color: #fff;
+    color: #c91523;
+  }
+  main aside li{
+    width: 100%;
+    height: 50px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 50px;
+    font-size: 13px;
+    background-color: #f7f7f7;
+  }
+  main article{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    background-color: #fff;
+  }
+  main article .hot-tuijian h2, .hot-sale h2 {
+    font-size: 13px;
+    color: #666;
+}
+main article .hot-tuijian ul {
+    margin-top: 15px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #fff;
+}
+.hot-tuijian ul li {
+    float: left;
+    width: 33.333333%;
+    height: 50px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 50px;
+    font-size: 13px;
+}
+main .hot-sale {
+    overflow: hidden;
+    margin: 15px 0;
+}
+.hot-sale ul {
+    width: 100%;
+}
+.hot-sale ul li {
+    float: left;
+    width: 33.33333%;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.hot-sale ul a {
+        display: block;
+        width: 100%;
+        text-align: center;
+}
+.hot-sale ul a img{
+        width: 100%;
+        vertical-align: middle;
+}
